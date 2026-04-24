@@ -148,9 +148,19 @@ p {
 
     <p class="footer">🎊 Valeu demais! 🎊</p>
 
-    <button class="btn" onclick="window.open('https://wa.me/5588993725569?text=Quero%20receber%20meu%20Presente%20%F0%9F%8E%81%F0%9F%92%B8', '_blank')">
-      Receber meu presente 🎁
-    </button>
+    <button class="btn" onclick="abrirWhatsApp()">
+  Receber meu presente 🎁
+</button>
+
+<script>
+function abrirWhatsApp() {
+  const numero = "5588993725569";
+  const mensagem = "Quero receber meu Presente 🎁💸";
+  const url = "https://wa.me/" + numero + "?text=" + encodeURIComponent(mensagem);
+
+  window.open(url, "_blank");
+}
+</script>
  
   </div>
 
