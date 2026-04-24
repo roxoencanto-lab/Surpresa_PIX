@@ -3,12 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <title>Surpresa Boa!</title>
+
   <style>
     body {
       margin: 0;
       font-family: 'Segoe UI', sans-serif;
-      background: linear-gradient(135deg, #ff7a18, #ffb347);
-      color: #fff;
+      background: linear-gradient(135deg, #581571, #2e0a3d);
+      color: #e4e4e4;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -16,18 +17,20 @@
     }
 
     .card {
-      background: rgba(0, 0, 0, 0.2);
-      backdrop-filter: blur(10px);
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255,255,255,0.1);
+      backdrop-filter: blur(12px);
       border-radius: 20px;
       padding: 30px;
-      max-width: 500px;
-      box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+      max-width: 520px;
+      box-shadow: 0 10px 40px rgba(0,0,0,0.5);
       text-align: center;
       animation: fadeIn 1s ease-in-out;
     }
 
     h1 {
-      font-size: 28px;
+      font-size: 30px;
+      color: #fea239;
       margin-bottom: 10px;
     }
 
@@ -40,49 +43,56 @@
     .highlight {
       font-size: 26px;
       font-weight: bold;
-      color: #ffe066;
+      color: #fea239;
       margin: 20px 0;
     }
 
-    .emoji {
-      font-size: 22px;
+    .money {
+      font-size: 32px;
+      font-weight: bold;
+      color: #00ff9d;
+      text-shadow: 0 0 10px rgba(0,255,157,0.6);
     }
 
     .footer {
       margin-top: 20px;
       font-weight: bold;
       font-size: 20px;
+      color: #fea239;
+    }
+
+    .btn {
+      margin-top: 25px;
+      padding: 14px 22px;
+      border: none;
+      border-radius: 12px;
+      background: #fea239;
+      color: #2e0a3d;
+      font-weight: bold;
+      font-size: 16px;
+      cursor: pointer;
+      transition: 0.3s;
+      box-shadow: 0 5px 15px rgba(254,162,57,0.4);
+    }
+
+    .btn:hover {
+      background: #ffb55c;
+      transform: scale(1.05);
     }
 
     @keyframes fadeIn {
       from {
         opacity: 0;
-        transform: translateY(20px);
+        transform: translateY(25px);
       }
       to {
         opacity: 1;
         transform: translateY(0);
       }
     }
-
-    .btn {
-      margin-top: 20px;
-      padding: 12px 20px;
-      border: none;
-      border-radius: 10px;
-      background: #ffe066;
-      color: #333;
-      font-weight: bold;
-      cursor: pointer;
-      transition: 0.3s;
-    }
-
-    .btn:hover {
-      background: #fff;
-      transform: scale(1.05);
-    }
   </style>
 </head>
+
 <body>
 
   <div class="card">
@@ -97,19 +107,19 @@
 
     <p>E nesse Dia do Trabalhador, não podia ser diferente…</p>
 
-    <p class="highlight">💸 Tu ganhou foi R$ 50,00! 💸</p>
+    <p class="money">💸 R$ 50,00 💸</p>
 
     <p>Isso mesmo! É cinquentinha na mão pra gastar do jeito que quiser 😄</p>
 
-    <p>Agora pensa aí:</p>
-
-    <p>🍔 Um lanchinho caprichado<br>
-       🎉 Curtir do teu jeito<br>
-       😌 Ou só aproveitar de boa</p>
+    <p>
+      🍔 Um lanchinho caprichado<br>
+      🎉 Curtir do teu jeito<br>
+      😌 Ou só aproveitar de boa
+    </p>
 
     <p>Só não vale dizer que não gostou 😂</p>
 
-    <p>A gente só tem a agradecer por tu tá junto com a gente todo dia, fazendo acontecer 🙌</p>
+    <p>A gente só tem a agradecer por tu tá junto com a gente todo dia 🙌</p>
 
     <p class="footer">🎊 Valeu demais! 🎊</p>
 
