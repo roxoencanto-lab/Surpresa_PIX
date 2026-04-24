@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Surpresa Boa!</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #ff7a18, #ffb347);
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .card {
+      background: rgba(0, 0, 0, 0.2);
+      backdrop-filter: blur(10px);
+      border-radius: 20px;
+      padding: 30px;
+      max-width: 500px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+      text-align: center;
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    h1 {
+      font-size: 28px;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 18px;
+      line-height: 1.5;
+      margin: 10px 0;
+    }
+
+    .highlight {
+      font-size: 26px;
+      font-weight: bold;
+      color: #ffe066;
+      margin: 20px 0;
+    }
+
+    .emoji {
+      font-size: 22px;
+    }
+
+    .footer {
+      margin-top: 20px;
+      font-weight: bold;
+      font-size: 20px;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .btn {
+      margin-top: 20px;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 10px;
+      background: #ffe066;
+      color: #333;
+      font-weight: bold;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background: #fff;
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card">
+    <h1>OXENTE, OLHA ISSO AQUI! 🤠</h1>
+
+    <p>Tu escaneou esse QR code achando que era só mais um, né? 😏</p>
+    <p>Pois se enganou bonito!</p>
+
+    <p>Depois de muita prosa, café e uns “vamo ver isso aí” ☕</p>
+
+    <p class="highlight">👏 TU MERECE É COISA BOA! 👏</p>
+
+    <p>E nesse Dia do Trabalhador, não podia ser diferente…</p>
+
+    <p class="highlight">💸 Tu ganhou foi R$ 50,00! 💸</p>
+
+    <p>Isso mesmo! É cinquentinha na mão pra gastar do jeito que quiser 😄</p>
+
+    <p>Agora pensa aí:</p>
+
+    <p>🍔 Um lanchinho caprichado<br>
+       🎉 Curtir do teu jeito<br>
+       😌 Ou só aproveitar de boa</p>
+
+    <p>Só não vale dizer que não gostou 😂</p>
+
+    <p>A gente só tem a agradecer por tu tá junto com a gente todo dia, fazendo acontecer 🙌</p>
+
+    <p class="footer">🎊 Valeu demais! 🎊</p>
+
+    <button class="btn" onclick="alert('Agora vai simbora aproveitar que tu merece! 🚀')">
+      Receber meu presente 🎁
+    </button>
+  </div>
+
+</body>
+</html>
