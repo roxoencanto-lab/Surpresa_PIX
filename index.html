@@ -2,93 +2,39 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <title>Surpresa Boa!</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <title>Surpresa Boa! 🎁</title>
+  <meta name="description" content="Uma surpresa especial pra você que faz acontecer todo dia! 💜">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="shortcut icon" href="favicon.png">
+
+  <!-- Cor da barra no mobile -->
+  <meta name="theme-color" content="#581571">
+
+  <!-- Google Fonts - Montserrat -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Fonte Cocon (local) -->
   <style>
+    @font-face {
+      font-family: 'Cocon';
+      src: url('Cocon-Regular.woff') format('woff'),
+           url('Cocon-Regular.ttf') format('truetype');
+      font-weight: normal;
+      font-style: normal;
+    }
+
     body {
+      font-family: 'Montserrat', sans-serif;
       margin: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background: linear-gradient(135deg, #581571, #2e0a3d);
-      color: #e4e4e4;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
+      padding: 0;
     }
 
-    .card {
-      background: rgba(255, 255, 255, 0.05);
-      border: 1px solid rgba(255,255,255,0.1);
-      backdrop-filter: blur(12px);
-      border-radius: 20px;
-      padding: 30px;
-      max-width: 520px;
-      box-shadow: 0 10px 40px rgba(0,0,0,0.5);
-      text-align: center;
-      animation: fadeIn 1s ease-in-out;
-    }
-
-    h1 {
-      font-size: 30px;
-      color: #fea239;
-      margin-bottom: 10px;
-    }
-
-    p {
-      font-size: 18px;
-      line-height: 1.5;
-      margin: 10px 0;
-    }
-
-    .highlight {
-      font-size: 26px;
-      font-weight: bold;
-      color: #fea239;
-      margin: 20px 0;
-    }
-
-    .money {
-      font-size: 32px;
-      font-weight: bold;
-      color: #00ff9d;
-      text-shadow: 0 0 10px rgba(0,255,157,0.6);
-    }
-
-    .footer {
-      margin-top: 20px;
-      font-weight: bold;
-      font-size: 20px;
-      color: #fea239;
-    }
-
-    .btn {
-      margin-top: 25px;
-      padding: 14px 22px;
-      border: none;
-      border-radius: 12px;
-      background: #fea239;
-      color: #2e0a3d;
-      font-weight: bold;
-      font-size: 16px;
-      cursor: pointer;
-      transition: 0.3s;
-      box-shadow: 0 5px 15px rgba(254,162,57,0.4);
-    }
-
-    .btn:hover {
-      background: #ffb55c;
-      transform: scale(1.05);
-    }
-
-    @keyframes fadeIn {
-      from {
-        opacity: 0;
-        transform: translateY(25px);
-      }
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
+    h1, .highlight, .money, .footer {
+      font-family: 'Cocon', cursive;
     }
   </style>
 </head>
